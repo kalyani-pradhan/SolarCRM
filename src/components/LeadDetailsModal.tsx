@@ -13,6 +13,7 @@ interface LeadDetailsModalProps {
   onEdit: (lead: Lead) => void
   onLogCall: (lead: Lead) => void
 }
+// This is dummy comment
 
 export function LeadDetailsModal({ lead, callRecords, followUps, onClose, onEdit, onLogCall }: LeadDetailsModalProps) {
   useEffect(() => {
