@@ -14,7 +14,8 @@ interface LeadDetailsModalProps {
   onLogCall: (lead: Lead) => void
 }
 // This is dummy comment
-
+// These are new changes
+// Hehe
 export function LeadDetailsModal({ lead, callRecords, followUps, onClose, onEdit, onLogCall }: LeadDetailsModalProps) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
