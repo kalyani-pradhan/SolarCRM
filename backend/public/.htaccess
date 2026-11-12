@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Serve the PHP API entry point for all requests under this folder.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Security hardening for public API exposures.
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "no-referrer"
+</IfModule>

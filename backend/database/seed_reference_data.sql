@@ -1,0 +1,6 @@
+-- This database is intentionally seed-free for production deployment.
+-- The CRM UI data used during local development is held in the frontend localStorage layer,
+-- while the authoritative database should begin empty and be populated through secure backend flows.
+--
+-- If you need a starter owner user, create it only through the secure CLI bootstrap script:
+-- php backend/bin/create-owner.php
